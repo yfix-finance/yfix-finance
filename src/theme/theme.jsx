@@ -137,7 +137,8 @@ const iswapTheme =  {
     },
     MuiSelect: {
       select: {
-        padding: '9px'
+        padding: '9px',
+        border: '0px'
       },
       selectMenu: {
         minHeight: '30px',
@@ -178,7 +179,9 @@ const iswapTheme =  {
           display: 'none !important',
           height: '0px',
           borderBottom: 'none !important'
-        },
+        }
+      }
+    },
     MuiIconButton: {
       root: {
         color: colors.darkBlack

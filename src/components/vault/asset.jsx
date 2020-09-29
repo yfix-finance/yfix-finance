@@ -120,7 +120,6 @@ const styles = theme => ({
     alignItems: 'center',
     flex: 1,
     padding: '12px 24px',
-    background: '#dedede',
     width: '100%',
     marginBottom: '24px',
     flexWrap: 'wrap'

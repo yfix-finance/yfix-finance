@@ -10,3 +10,6 @@ body {
 .Footer-footer-11 {
   display: none;
 }
+#root {
+  margin-bottom: 5px;
+}
