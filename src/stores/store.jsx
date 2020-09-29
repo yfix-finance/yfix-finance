@@ -811,7 +811,7 @@ class Store {
         },
       ],
       vaultAssets: [
-        {
+        /*{
           id: 'ETH',
           name: 'ETH',
           symbol: 'ETH',
@@ -872,7 +872,7 @@ class Store {
           lastMeasurement: 10695309,
           measurement: 1e18,
           price_id: 'yearn-finance',
-        },
+        },*/
         {
           id: 'CRV',
           name: 'curve.fi/y LP',
