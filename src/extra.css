@@ -1,0 +1,12 @@
+body {
+  background-image: url('/background-image.svg');
+}
+.Header-root-1 {
+  height: 80px;
+}
+.MuiLinearProgress-root {
+  display: none;
+}
+.Footer-footer-11 {
+  display: none;
+}
