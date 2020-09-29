@@ -347,7 +347,7 @@ class Asset extends Component {
             </div>
             { asset.depositDisabled === true &&
               <div className={classes.disabledContainer}>
-                <Typography variant='h4'>Deposits are currently disabled for this vault</Typography>
+                <Typography variant='h4'>Deposits are currently disabled - stay tuned!</Typography>
               </div>
             }
           </div>

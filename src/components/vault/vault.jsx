@@ -611,6 +611,8 @@ class Vault extends Component {
       }
     } else if (asset.apy) {
       return asset.apy
+    } else if (asset.id === "YFIX") {
+      return '147.0' // APR % == Current number of YFIX holders!
     } else {
       return '0.00'
     }

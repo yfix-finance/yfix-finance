@@ -874,6 +874,27 @@ class Store {
           price_id: 'yearn-finance',
         },*/
         {
+          id: 'YFIX',
+          name: 'YFIX.finance',
+          symbol: 'YFIX',
+          description: 'YFIX.FINANCE',
+          vaultSymbol: 'YFIX',
+          erc20address: '0xa4f779074850D320B5553C9Db5Fc6A8ab15Bd34a',
+          vaultContractAddress: '0x826cc6CF1a3516E4f756704578D9fFE392Ec1eA9',
+          vaultContractABI: config.vaultContractV3ABI,
+          balance: 0,
+          vaultBalance: 0,
+          decimals: 18,
+          deposit: true,
+          depositAll: true,
+          withdraw: true,
+          withdrawAll: true,
+          lastMeasurement: 10695309,
+          measurement: 1e18,
+          price_id: 'yfix-finance',
+          depositDisabled: true
+        },
+        {
           id: 'CRV',
           name: 'curve.fi/y LP',
           symbol: 'yCRV',
