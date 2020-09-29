@@ -1,6 +1,7 @@
 import createBreakpoints from '@material-ui/core/styles/createBreakpoints'
 
 import WorkSansTTF from '../assets/fonts/WorkSans-VariableFont_wght.ttf';
+import OswaldTTF from '../assets/fonts/Oswald-VariableFont_wght.ttf';
 
 const WorkSans = {
   fontFamily: 'Work Sans Thin',
@@ -16,16 +17,30 @@ const WorkSans = {
     'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF',
 };
 
+const Oswald = {
+  fontFamily: 'Oswald Regular',
+  fontStyle: 'normal',
+  fontDisplay: 'swap',
+  fontWeight: 400,
+  src: `
+    local('Oswald Regular'),
+    local('Oswald Regular'),
+    url(${OswaldTTF}) format('truetype')
+  `,
+  unicodeRange:
+    'U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF',
+};
+
 export const colors = {
-  white: "#fff",
+  white: "#161A35",
   black: '#000',
   darkBlue: "#2c3b57",
   blue: "#2F80ED",
   gray: "#e1e1e1",
-  lightGray: "#737373",
+  lightGray: "#161A35",
   lightBlack: "#6a6a6a",
-  darkBlack: "#141414",
-  green: '#1abc9c',
+  darkBlack: "#ffffff",
+  green: '#13d871',
   red: '#ed4337',
   orange: 'orange',
   pink: '#DC6BE5',
@@ -33,11 +48,11 @@ export const colors = {
   tomato: '#e56b73',
   purple: '#935dff',
 
-  text: "#212529",
+  text: "#ffffff",
   lightBlue: "#2F80ED",
   topaz: "#0b8f92",
-  darkGray: "rgba(43,57,84,.5)",
-  borderBlue: 'rgba(25, 101, 233, 0.5)'
+  darkGray: "#ccc",
+  borderBlue: '#2D3459'
 };
 
 const breakpoints = createBreakpoints({
@@ -164,6 +179,9 @@ const iswapTheme =  {
           height: '0px',
           borderBottom: 'none !important'
         },
+    MuiIconButton: {
+      root: {
+        color: colors.darkBlack
       }
     },
     MuiInputBase: {
@@ -172,10 +190,19 @@ const iswapTheme =  {
         fontWeight: '600',
         WebkitFontSmoothing: "antialiased",
         MozOsxFontSmoothing: "grayscale",
-        lineHeight: 1.2
+        lineHeight: 1.2,
+        border: '1px solid',
+        borderColor: colors.gray
       }
     },
     MuiOutlinedInput: {
+      adornedStart: {
+        border: '1px solid',
+        borderColor: colors.borderBlue
+      },
+      inputAdornedStart: {
+        border: 0
+      },
       input: {
         "&::placeholder": {
           color: colors.text
@@ -259,26 +286,29 @@ const iswapTheme =  {
         border: 'none',
         background: colors.white,
         '& > span > h4': {
-          color: '#555',
+          color: colors.text
         },
         '&:hover': {
-          backgroundColor: "rgba(47,128,237, 0.2)",
+          backgroundColor: colors.borderBlue
         },
         "&$selected": {
           backgroundColor: '#2f80ed',
           '& > span > h4': {
-            color: '#fff',
+            color: colors.text
           },
           '&:hover': {
-            backgroundColor: "rgba(47,128,237, 0.2)",
+            backgroundColor: colors.borderBlue,
             '& > span > h4': {
-              color: '#000',
+              color: colors.text
             },
           },
         }
       }
     },
     MuiPaper: {
+      root: {
+        backgroundColor: colors.white
+      },
       elevation1: {
         boxShadow: 'none'
       }

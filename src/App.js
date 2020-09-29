@@ -72,8 +72,7 @@ class App extends Component {
             display: 'flex',
             flexDirection: 'column',
             minHeight: '100vh',
-            alignItems: 'center',
-            background: "#f9fafb"
+            alignItems: 'center'
           }}>
             <Switch>
               <Route path="/stats">

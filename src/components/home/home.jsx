@@ -26,6 +26,7 @@ const styles = theme => ({
     }
   },
   card: {
+    backgroundColor: '#161A35',
     flex: '1',
     height: '25vh',
     width: '100%',

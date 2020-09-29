@@ -21,7 +21,7 @@ import BuiltWithModal from '../builtwith/builtwithModal.jsx'
 const styles = theme => ({
   footer: {
     padding: '24px',
-    display: 'flex',
+    display: 'none',
     justifyContent: 'space-evenly',
     width: '100%',
     background: colors.white,

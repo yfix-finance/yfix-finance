@@ -32,7 +32,7 @@ const styles = theme => ({
     maxWidth: '1200px',
     width: '100%',
     justifyContent: 'flex-start',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   investedContainerLoggedOut: {
     display: 'flex',
@@ -68,7 +68,7 @@ const styles = theme => ({
   portfolioContainer: {
     width: '100%',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-between'
   },
   vaultContainer: {
     padding: '28px 30px',
@@ -77,7 +77,7 @@ const styles = theme => ({
     background: colors.white,
     display: 'flex',
     flexDirection: 'column',
-    width: '100%',
+    width: '100%'
   },
   earnContainer: {
     marginTop: '40px',

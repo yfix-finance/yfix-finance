@@ -48,7 +48,8 @@ const styles = theme => ({
     maxWidth: '1200px',
     width: '100%',
     justifyContent: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
+    marginBottom: '20px'
   },
   investedContainerLoggedOut: {
     display: 'flex',

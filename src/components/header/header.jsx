@@ -190,19 +190,16 @@ class Header extends Component {
           <div className={ classes.icon }>
             <img
               alt=""
-              src={ require('../../assets/YFI-logo.png') }
+              src={ require('../../assets/YFIX-logo.png') }
               height={ '40px' }
-              onClick={ () => { this.nav('') } }
+              onClick={ () => { this.nav('dashboard') } }
             />
-            <Typography variant={ 'h3'} className={ classes.name } onClick={ () => { this.nav('') } }>yearn.finance</Typography>
+            <Typography variant={ 'h3'} className={ classes.name } onClick={ () => { this.nav('dashboard') } }>YFIX.finance</Typography>
           </div>
           <div className={ classes.links }>
             { this.renderLink('dashboard') }
             { this.renderLink('vaults') }
             { this.renderLink('earn') }
-            { this.renderLink('zap') }
-            { this.renderLink('cover') }
-            { this.renderLink('stats') }
           </div>
           <div className={ classes.account }>
             { address &&
